@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { SearchInput } from "../molecules/SearchInput";
 import { UserCard } from "../organism/user/UserCard";
 
