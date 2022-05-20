@@ -1,8 +1,12 @@
 import { PrimaryButton } from "../atoms/button/PrimaryButton";
 import { Input } from "../atoms/input/Input";
 import styled from "styled-components";
+import { memo } from "react";
 
-export const SearchInput = () => {
+//memoをつけるとpropsに変更がない限りは再レンダリングされない
+export const SearchInput = memo(() => {
+  console.log(`SerchInput`);
+
   return (
     // ボタンとテキストボックスを用意したい
     <SContainer>
@@ -14,7 +18,7 @@ export const SearchInput = () => {
       </SButtonWrapper>
     </SContainer>
   );
-};
+});
 
 const SContainer = styled.div`
   display: flex;
